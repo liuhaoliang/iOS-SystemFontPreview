@@ -13,6 +13,7 @@
 		1D32C3F21D4710B800ED1448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D32C3F11D4710B800ED1448 /* Assets.xcassets */; };
 		1D32C3F51D4710B800ED1448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D32C3F31D4710B800ED1448 /* LaunchScreen.storyboard */; };
 		1D32C3FE1D47112900ED1448 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32C3FD1D47112800ED1448 /* DetailViewController.m */; };
+		C95EB018753B20002C6C79BA /* libPods-查看系统自带字体.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E930CCBF963C3A730E2A24C /* libPods-查看系统自带字体.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,9 @@
 		1D32C3F61D4710B800ED1448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D32C3FC1D47112800ED1448 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		1D32C3FD1D47112800ED1448 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7159B0A639DD318DA8676256 /* Pods-查看系统自带字体.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-查看系统自带字体.debug.xcconfig"; path = "Pods/Target Support Files/Pods-查看系统自带字体/Pods-查看系统自带字体.debug.xcconfig"; sourceTree = "<group>"; };
+		9E930CCBF963C3A730E2A24C /* libPods-查看系统自带字体.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-查看系统自带字体.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7D670892E5A23753C3FF56 /* Pods-查看系统自带字体.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-查看系统自带字体.release.xcconfig"; path = "Pods/Target Support Files/Pods-查看系统自带字体/Pods-查看系统自带字体.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95EB018753B20002C6C79BA /* libPods-查看系统自带字体.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +50,8 @@
 			children = (
 				1D32C3E41D4710B500ED1448 /* 查看系统自带字体 */,
 				1D32C3E31D4710B400ED1448 /* Products */,
+				4B596204B82873DC5C9D4006 /* Pods */,
+				49DDB3377A74238221EA22F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49DDB3377A74238221EA22F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E930CCBF963C3A730E2A24C /* libPods-查看系统自带字体.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B596204B82873DC5C9D4006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7159B0A639DD318DA8676256 /* Pods-查看系统自带字体.debug.xcconfig */,
+				BE7D670892E5A23753C3FF56 /* Pods-查看系统自带字体.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D32C3F91D4710B800ED1448 /* Build configuration list for PBXNativeTarget "查看系统自带字体" */;
 			buildPhases = (
+				3C5631B61C8591347861CF93 /* [CP] Check Pods Manifest.lock */,
 				1D32C3DE1D4710B400ED1448 /* Sources */,
 				1D32C3DF1D4710B400ED1448 /* Frameworks */,
 				1D32C3E01D4710B400ED1448 /* Resources */,
+				915747E5A4A3CDC855AEA00C /* [CP] Embed Pods Frameworks */,
+				6AEF8CF4405E1C49C3808D58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C5631B61C8591347861CF93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AEF8CF4405E1C49C3808D58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-查看系统自带字体/Pods-查看系统自带字体-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915747E5A4A3CDC855AEA00C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-查看系统自带字体/Pods-查看系统自带字体-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D32C3DE1D4710B400ED1448 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		1D32C3FA1D4710B800ED1448 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7159B0A639DD318DA8676256 /* Pods-查看系统自带字体.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VUFDA6H9L;
@@ -272,6 +348,7 @@
 		};
 		1D32C3FB1D4710B800ED1448 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7D670892E5A23753C3FF56 /* Pods-查看系统自带字体.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
