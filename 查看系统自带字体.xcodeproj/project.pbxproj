@@ -112,6 +112,7 @@
 				TargetAttributes = {
 					1D32C3E11D4710B400ED1448 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RY9283N2XN;
 					};
 				};
 			};
@@ -257,10 +258,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RY9283N2XN;
 				INFOPLIST_FILE = "查看系统自带字体/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LHL.--------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mruncle.TapthBlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -269,10 +271,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RY9283N2XN;
 				INFOPLIST_FILE = "查看系统自带字体/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LHL.--------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mruncle.TapthBlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
